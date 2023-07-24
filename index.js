@@ -10,7 +10,7 @@ buttons.map( button => {
                 try{
 
                     display.innerText = eval(display.innerText);
-                    //display.innerText = display.innerText.toLocaleString('en');
+                    //display.innerText = display.innerText.;
                 } catch {
                     display.innerText = "MATH ERROR"
                     

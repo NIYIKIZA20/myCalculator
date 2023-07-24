@@ -1,0 +1,85 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    cornflowerblue,
+    darkgrey
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: darkblue;
+}
+.calculator {
+  background-color: rgba(255, 255, 255, 20%);
+  display: grid;
+  height: fit-content;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 70px);
+  border: 10px solid black;
+  border-radius: 5px;
+}
+.button {
+  border: 1px solid white;
+  outline: none;
+  line-height: 70px;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.display {
+  grid-column: span 4;
+  background-color: rgba(255, 255, 255, 20%);
+  display: flex;
+  border: 1px solid blue;
+  justify-content: right;
+  align-items: flex-end;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: auto;
+  color: black;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.equal {
+  grid-column: span 2;
+  background-color: rgba(255, 0, 0, 50%);
+}
+
+.button:hover {
+  background-color: rgba(0, 255, 255, 25%);
+  transition: 0.5s ease-in-out;
+  color: black;
+}
+.display:hover {
+  background-color: rgba(255, 255, 255, 20%);
+  font-size: 2.5rem;
+  color: darkblue;
+}
+.operas {
+  font-size: larger;
+  color: deepskyblue;
+}
+.operas:hover {
+  background-color: rgba(0, 255, 255, 25%);
+  transition: 0.5s ease-in-out;
+  color: red;
+}
+.DE {
+  background-color: darkblue;
+}
+.AC {
+  background-color: cyan;
+}
+AC {
+  background-color:darkgrey;
+}
